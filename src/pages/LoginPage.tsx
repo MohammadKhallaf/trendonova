@@ -39,14 +39,19 @@ const LoginPage = () => {
             البريد الالكتروني
           </a>
         </div>
+
         <div className="mt-8">
-          {tabIndex === 1 ? <PhoneForm setForm={setFormData} /> : <EmailForm />}
-          <div className="mt-5">
-            <div className="py-5 text-center">احصل على التطبيق</div>
-            <div className="flex flex-row justify-center gap-3">
-              <button className="btn-secondary btn">من جوجل بلاي</button>
-              <button className="btn-secondary btn">من تطبيقات آبل</button>
-            </div>
+          {tabIndex === 1 ? (
+            <PhoneForm setForm={setFormData} />
+          ) : (
+            <EmailForm setForm={setFormData} />
+          )}
+        </div>
+        <div className="mt-5">
+          <div className="py-5 text-center">احصل على التطبيق</div>
+          <div className="flex flex-row justify-center gap-3">
+            <button className="btn-secondary btn">من جوجل بلاي</button>
+            <button className="btn-secondary btn">من تطبيقات آبل</button>
           </div>
         </div>
       </div>

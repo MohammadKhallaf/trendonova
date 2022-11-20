@@ -12,7 +12,7 @@ const PhoneForm = ({ setForm }: Props) => {
   };
   return (
     <form
-      onClick={submitEmailHandler}
+      onSubmit={submitEmailHandler}
       className="container mx-auto flex h-80 max-w-sm flex-col gap-5"
     >
       <div className="flex flex-col gap-3 sm:flex-row">
